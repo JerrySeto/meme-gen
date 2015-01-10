@@ -1,0 +1,20 @@
+<script id='meme-edit-template' type='text/x-handlebars-template'>
+  <div id='template-img'></div>
+  <div id='edit-form'></div>
+</script>
+
+<script id='meme-edit-form-template' type='text/x-handlebars-template'>
+  <form class='meme-form'>
+      <input type='radio' id='xzibit' name='template' {{#if xzibit}}checked='on'{{/if}}/>
+      <label for='xzibit'/>
+      <input type='radio' id='morpheus' name='template' {{#if morpheus}}checked='on'{{/if}}/>
+      <label for='morpheus'/>
+      <input type='radio' id='boromir' name='template' {{#if boromir}}checked='on'{{/if}}/>
+      <label for='boromir'/>
+      <fieldset>
+        <input class='meme-textfield' id='top-text' placeholder ='Top Text' type='text' value='{{model.top_text}}'>
+        <input class='meme-textfield' id='bottom-text' placeholder ='Bottom Text' type='text' value='{{model.bottom_text}}'>
+      </fieldset>
+      <button id='submit'>Submit</button>
+    </form>
+</script>
